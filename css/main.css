@@ -1,0 +1,491 @@
+/* Стилизирует секцию Герой */
+
+.hero {
+  text-align: center;
+  background-color: var(--scnd-bgc);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+/* Стилизурет фон Героя */
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img-hw-4/overlay.jpg);
+}
+
+.hero .container {
+  margin-top: 0;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  color: var(--white);
+
+  margin-bottom: 30px;
+}
+
+.button {
+  display: inline-flex;
+  text-align: center;
+
+  min-width: 200px;
+  padding: 10px 32px;
+
+  border-radius: 4px;
+  border: inherit;
+
+  background-color: var(--accent);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: var(--white);
+  transition: 250ms var(--timing-function);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--title-text-color);
+  background: var(--white);
+}
+
+/* Стилизация секции Особенности  */
+
+.features .list {
+  display: flex;
+}
+
+.features-list .item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: var(--third-bgc);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-antenna::before {
+  background: url(../img-hw-4/antenna.svg);
+}
+.icon-clock::before {
+  background: url(../img-hw-4/clock.svg);
+}
+.icon-diagram::before {
+  background: url(../img-hw-4/diagram.svg);
+}
+.icon-astronaut::before {
+  background: url(../img-hw-4/astronaut.svg);
+}
+
+.features .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  display: block;
+  min-width: 270px;
+  min-height: 16px;
+  margin-bottom: 10px;
+}
+.features-skill {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.features-container .list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-container .item {
+  width: calc((100% - 90px) / 4);
+}
+
+/* Чем мы занимаемся */
+
+.works-section {
+  padding-top: 0px;
+}
+
+.works-title {
+  text-align: center;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.works .list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.works .list:nth-child(3n + 1) {
+  margin-left: 0;
+}
+
+.works .item {
+  position: relative;
+  margin-left: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.works-overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.works-thumb {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--white);
+}
+
+/* Стилизация секции Наша команда */
+
+.team {
+  background-color: var(--third-bgc);
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.team .item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 4 - 30px);
+  background-color: var(--white);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team .title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.team-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  color: var(--title-text-color);
+}
+
+.team .position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.team-container .social-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-container .team-content {
+  padding: 30px 32px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+.clients-title {
+  text-align: center;
+}
+.clients-item-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition: 250ms var(--timing-function);
+}
+
+.clients-icons-svg {
+  fill: var(--svg-icons);
+  transition: fill 250ms var(--timing-function);
+}
+
+.clients-item-link:hover,
+.clients-item-link:focus {
+  border: 1px solid var(--accent);
+}
+
+.clients-item-link:hover .clients-icons-svg,
+.clients-item-link:focus .clients-icons-svg {
+  fill: var(--accent);
+}
+
+/* MODAL WINDOW + OVERLAY */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms var(--timing-function);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  background: var(--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  width: 528px;
+  height: 581px;
+
+  transform: scale(1) translate(-50%, -50%);
+  transition: transform 250ms var(--timing-function);
+}
+
+.backdrop.is-hidden .modal {
+  transform: scale(0.9) translate(-50%, -50%);
+}
+
+.modal-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+
+  background-color: inherit;
+  transition: 250ms var(--timing-function);
+}
+
+.btn-close {
+  fill: currentColor;
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  color: var(--accent);
+  background: var(--white);
+  border-color: var(--accent);
+}
+
+.modal-title {
+  display: inherit;
+  width: 448px;
+  margin: 40px 40px 12px 40px;
+
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.form {
+  margin: 0px 40px 40px 40px;
+}
+
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form-field label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: var(--main-text-color);
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  /* margin: 0; */
+  padding: 12px 0px 12px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms var(--timing-function);
+}
+
+/* .form-input:focus {
+  outline-color: var(--accent);
+} */
+
+.form-field:focus-within .form-input,
+.form-field:focus-within .form-icon {
+  fill: var(--accent);
+  outline-color: var(--accent);
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.form-field textarea {
+  resize: none;
+
+  width: 100%;
+  height: 120px;
+  /* margin: 0; */
+  padding: 12px 16px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.check-input {
+  /* position: absolute;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; */
+
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.check-box {
+  display: inline-block;
+
+  width: 16px;
+  height: 15px;
+  border: 2px solid black;
+
+  border-radius: 2px;
+
+  transition: 250ms var(--timing-function);
+}
+
+.policy {
+  margin-left: 8px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.policy a {
+  /* text-decoration: none; */
+  color: var(--accent);
+}
+
+.check-input:checked + .check-box {
+  border-color: var(--accent);
+  background-color: var(--accent);
+  background-image: url(../img-hw-6/check_on.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.btn-send-form.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  padding: 10px 55px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: 250ms var(--timing-function);
+}
+
+.btn-send-form.button:focus,
+.btn-send-form.button:hover {
+  background-color: greenyellow;
+}
+
+/* Стилизация подвала 
+   находится в common.css  */
