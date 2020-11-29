@@ -1,5 +1,6 @@
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/placeholder";
 @import "./base/fonts";
 @import "./base/normalize";
 @import "./base/common";
@@ -7,10 +8,11 @@
 @import "./components/common/logo";
 @import "./components/common/navigation";
 @import "./components/common/header-contacts";
-@import "./layouts/header";
+@import "./components/common/header";
 
 @import "./components/portfolio";
 
+@import "./components/common/button";
 @import "./components/common/social-icons";
 
 @import "./components/common/footer";

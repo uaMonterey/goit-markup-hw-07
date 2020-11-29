@@ -96,14 +96,14 @@
       <section class="works-section section">
         <div class="works container">
           <h2 class="works__title title">Чем мы занимаемся</h2>
-          <ul class="list">
-            <li class="item">
+          <ul class="works__list list">
+            <li class="works__item">
               <img src="./img-hw-1/img1.jpg" alt="Программист за работой" width="370" />
               <div class="works__overlay">
                 <span class="works__thumb">Десктопные приложения</span>
               </div>
             </li>
-            <li class="item">
+            <li class="works__item">
               <img
                 src="./img-hw-1/img2.jpg"
                 alt="Команда создателей работает над интерфейсом мобильных телефонов"
@@ -113,7 +113,7 @@
                 <span class="works__thumb">Мобильные приложения</span>
               </div>
             </li>
-            <li class="item">
+            <li class="works__item">
               <img src="./img-hw-1/img3.jpg" alt="Креативный художник веб дизайна" width="370" />
               <div class="works__overlay">
                 <span class="works__thumb">Дизайнерские решения</span>
@@ -528,39 +528,39 @@
     </footer>
 
     <!--MODAL WINDOW + OVERLAY START-->
-    <div data-modal class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn" data-modal-close>
-          <svg class="btn-close" width="11" height="11">
+        <button class="modal__btn" data-modal-close>
+          <svg class="modal__btn--close" width="11" height="11">
             <use href="./img-hw-4/sprite.svg#icon-close"></use>
           </svg>
         </button>
-        <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+        <b class="modal__title">Оставьте свои данные, мы вам перезвоним</b>
         <form class="form">
-          <div class="form-field">
+          <div class="form__field">
             <label for="name">Имя</label>
-            <input class="form-input" type="text" name="name" id="name" required pattern="^[А-Яа-яЁё\s]+$" />
-            <svg class="form-icon" width="12" height="12">
+            <input class="form__input" type="text" name="name" id="name" required pattern="^[А-Яа-яЁё\s]+$" />
+            <svg class="form__icon" width="12" height="12">
               <use href="./img-hw-4/sprite.svg#icon-modal-person"></use>
             </svg>
           </div>
-          <div class="form-field">
+          <div class="form__field">
             <label for="tel">Телефон</label>
-            <input class="form-input" type="tel" name="tel" id="tel" required />
-            <svg class="form-icon" width="13" height="13">
+            <input class="form__input" type="tel" name="tel" id="tel" required />
+            <svg class="form__icon" width="13" height="13">
               <use href="./img-hw-4/sprite.svg#icon-modal-phone"></use>
             </svg>
           </div>
-          <div class="form-field">
+          <div class="form__field">
             <label for="mail">Почта</label>
-            <input class="form-input" type="email" name="mail" id="mail" required />
-            <svg class="form-icon" width="15" height="12">
+            <input class="form__input" type="email" name="mail" id="mail" required />
+            <svg class="form__icon" width="15" height="12">
               <use href="./img-hw-4/sprite.svg#icon-modal-mail"></use>
             </svg>
           </div>
-          <div class="form-field">
+          <div class="form__field">
             <label for="comment">Коментарий</label>
-            <textarea class="form-input" name="comment" id="comment" placeholder="Введите текст"></textarea>
+            <textarea class="form__input" name="comment" id="comment" placeholder="Введите текст"></textarea>
           </div>
           <label class="check">
             <input class="check-input" type="checkbox" name="checkbox" />
