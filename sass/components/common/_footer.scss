@@ -1,4 +1,6 @@
 .footer {
+  text-align: center;
+
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -8,11 +10,14 @@
 
   background-color: $secondary-bgc;
 
-  .container {
-    display: flex;
-    align-items: baseline;
-  }
+  // .container {
+  //   display: flex;
+  //   align-items: baseline;
+  // }
 
+  .address-container {
+    margin-bottom: 60px;
+  }
   .logo {
     display: inline-block;
     margin-bottom: 20px;
@@ -47,8 +52,13 @@
 }
 
 .social-network {
-  padding-top: 12px;
-  margin-left: 70px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
+
+  // padding-top: 12px;
+  // margin-left: 70px;
   width: 206px;
   height: 80px;
 
